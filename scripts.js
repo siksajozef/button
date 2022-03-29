@@ -1,3 +1,5 @@
+let color="blue";
+
 $("#first").click
 (
   () => 
@@ -20,5 +22,9 @@ $('#third').click
   () => 
   {
     $("button").css("background", "yellow");
+    const input = prompt("Color?");
+    color=input;
+    $("button").css("background", color);
+
   }
 )
